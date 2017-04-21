@@ -7,6 +7,6 @@ import java.util.List;
 
 public class OrganizationSection extends Section{
 
-    List<Organization> values;
+    private List<Organization> values;
 
 }
