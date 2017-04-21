@@ -5,10 +5,19 @@ import java.util.Map;
 
 public class Contact {
 
-    private Map<String, String> properties;
+    private final ContactType type;
+    private final String value;
 
-    public Contact(Map< String, String> properties){
-        this.properties = properties;
+    public Contact(ContactType type, String value){
+        this.type = type;
+        this.value = value;
+    }
+
+    public ContactType getType(){
+        return type;
+    }
+    public String getValue(){
+        return value;
     }
 
 }
